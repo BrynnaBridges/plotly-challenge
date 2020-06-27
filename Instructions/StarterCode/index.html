@@ -1486,8 +1486,6 @@
   border-bottom: 1px solid #ddd;
 }
 
-#myTable tr.header, #myTable tr:hover {
-  /* Add a grey background color to the table header and on hover */
 </style>
 
 
@@ -1541,7 +1539,7 @@ d3.csv("samples.csv", function(data) {
   // Reverse the array due to Plotly's defaults
   data = data.reverse();
 
-  // Trace1 for the Greek Data
+  // Trace1 
   var trace1 = {
     x: data.map(row => row.samples__sample_values),
     //y: data.map(row => row.samples__otu_ids),
